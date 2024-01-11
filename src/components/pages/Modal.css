@@ -1,0 +1,86 @@
+.modal {
+    background: var(--Modal);
+    border: none;
+    border-radius: 2rem;
+    animation: fade-in 0.4s ease-out forwards;
+    width: 50%;
+    overflow: hidden;
+}
+
+.modal::backdrop {
+    background: rgba(0,0,0, 0.7);
+
+}
+
+.modal h2 {
+    color: #312c1d;
+    margin: 0;
+}
+
+.modal h3 {
+    color: #312c1d;
+    position: relative;
+    top: 1vw;
+    text-align: center;
+}
+.modal h1 {
+    color: #312c1d;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+
+.checkout {
+    position: relative;
+    text-align: center;
+}
+
+.cart-items-actions {
+    position: absolute;
+    right: 3vw;
+}
+
+.cart-actions {
+    color: var(--text-color);
+    border-radius: 10rem;
+    background: var(--primary-color);
+    border: none;
+    margin: 0 0.6vw 0 0.6vw;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(10rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.close {
+    border: none;
+    display: inline-flex;
+    background: transparent;
+    position: relative;
+    left: 25vw;
+    top: 1vw;
+    cursor: pointer;
+}
+
+.submit {
+    border-radius: 10rem;
+    border: none;
+    position: relative;
+    left: 27vw;
+    top: 1vw;
+    cursor: pointer;
+}
+
+.gpay {
+    width: 100%;
+    height: 50vh;
+    object-fit: contain;
+}

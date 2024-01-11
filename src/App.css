@@ -1,0 +1,59 @@
+.App-logo {
+  height: 10vmin;
+  display: flex;
+}
+body {
+  background: #1D1A16;
+  color: var(--text-color);
+  height: 100vh;
+}
+
+:root {
+  --primary-color: #1D1A16;
+  --secondary-color: #29251C;
+  --text-color: #FFC404;
+  --color-primary-400: #FFC404;
+  --color-primary-800: #0663dc;
+  --button: orange;
+  --Modal: #E3DCD3;
+}
+
+.dark-light-theme {
+  --primary-color: white;
+  --text-color: black;
+  --color-primary-400: #d55608;
+  --color-primary-800: #06dc0b;
+  --button: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: var(--primary-color);
+  height: 10vh;
+  display: flex;
+  font-size: calc(10px + 2vmin);
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+{
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

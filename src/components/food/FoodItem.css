@@ -1,0 +1,66 @@
+#meals {
+    width: 90%;
+    max-width: 70rem;
+    list-style: none;
+    margin: 3rem auto;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.meal-item {
+    /*background-color: #1d1a16;*/
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 1);
+}
+
+.meal-item:hover {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.7);
+    scale: 1.05;
+    transition: 0.3s;
+}
+
+.meal-item article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.meal-item img {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+}
+
+.meal-item h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.75rem 0;
+}
+
+.meal-item-description {
+    margin: 1rem;
+}
+
+.meal-item-price {
+    display: inline-block;
+    background-color: #312c1d;
+    color: #ffc404;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    margin: 0;
+    border-radius: 4px;
+}
+
+.meal-item-actions {
+    margin-bottom: 1.5rem;
+    background: var(--text-color);
+    /*color: var(--text-color);*/
+    border-radius: 10px;
+    height: 40px;
+}
