@@ -13,27 +13,22 @@
 }
 
 .theme {
-    /*margin-right: 10px;*/
-    /*width: auto;*/
-    /*font-size: 10px;*/
-    /*align-self: center;*/
-    /*float: right;*/
     position: absolute;
     left: 90vw;
-    /*border-radius: 1rem;*/
-    /*background: var(--button);*/
     color: var(--text-color);
     cursor: pointer;
 }
 
 .heading {
     position: absolute;
-    margin-left: 25vw;
+    margin-left: 20vw;
     font-family: 'Raleway', sans-serif;
+    font-size: 2.5vw;
 }
 .cart {
     position: absolute;
-    left: 85vw;
+    right: 5vw;
+    font-size: 1.8vw;
     cursor: pointer;
 }
 

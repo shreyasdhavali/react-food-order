@@ -19,10 +19,12 @@ export const Cart = () => {
 
     return <Modal open={userCtx.progress === 'cart'}>
         {cartCtx.items.length === 0 ?
-            <p>Your cart items is empty.
+            <>
+                <p>Your cart items is empty.</p>
+                <p className="cart-close-submit">
                 <button className="close" onClick={() => userCtx.hideCart()}>Close</button>
                 <button className="submit" onClick={handleCheckout}>Support</button>
-            </p> :
+            </p></> :
             <><h2>Total cart items</h2>
                 {cartCtx.items.map(item => (
                     <p key={item.id}>
@@ -35,7 +37,7 @@ export const Cart = () => {
                     </p>
                 ))}
                 <h3>Total price - {total}</h3>
-                <p>
+                <p className="cart-close-submit">
                     <button className="close" onClick={() => userCtx.hideCart()}>Close</button>
                     <button className="submit" onClick={handleCheckout}>Proceed to checkout</button>
                 </p>
